@@ -1,0 +1,25 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/advanced/keymaps
+'.platform-darwin':
+  'cmd-k left':  'pane:split-left-creating-empty-pane'
+  'cmd-k right': 'pane:split-right-creating-empty-pane'
+  'cmd-k up':    'pane:split-up-creating-empty-pane'
+  'cmd-k down':  'pane:split-down-creating-empty-pane'
+  
+  'cmd-k m left':  'pane:split-left-moving-current-tab'
+  'cmd-k m right': 'pane:split-right-moving-current-tab'
+  'cmd-k m up':    'pane:split-up-moving-current-tab'
+  'cmd-k m down':  'pane:split-down-moving-current-tab'
+  
+  'cmd-k d left':  'pane:split-left'
+  'cmd-k d right': 'pane:split-right'
+  'cmd-k d up':    'pane:split-up'
+  'cmd-k d down':  'pane:split-down'
+  

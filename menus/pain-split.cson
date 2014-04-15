@@ -1,0 +1,56 @@
+'menu': [
+  {
+    'label': 'Window'
+    'submenu': [
+      'type': 'separator'
+    ,
+      'label': 'Split Pane Left'
+      'submenu': [
+        'label': 'Create Empty Pane'
+        'command': 'pane:split-left-creating-empty-pane'
+      ,
+        'label': 'Move Current Tab'
+        'command': 'pane:split-left-moving-current-tab'
+      ,
+        'label': 'Duplicate Current Tab'
+        'command': 'pane:split-left'
+      ]
+    ,
+      'label': 'Split Pane Right'
+      'submenu': [
+        'label': 'Create Empty Pane'
+        'command': 'pane:split-right-creating-empty-pane'
+      ,
+        'label': 'Move Current Tab'
+        'command': 'pane:split-right-moving-current-tab'
+      ,
+        'label': 'Duplicate Current Tab'
+        'command': 'pane:split-right'
+      ]
+    ,
+      'label': 'Split Pane Up'
+      'submenu': [
+        'label': 'Create Empty Pane'
+        'command': 'pane:split-right-creating-empty-pane'
+      ,
+        'label': 'Move Current Tab'
+        'command': 'pane:split-up-moving-current-tab'
+      ,
+        'label': 'Duplicate Current Tab'
+        'command': 'pane:split-up'
+      ]
+    ,
+      'label': 'Split Pane Down'
+      'submenu': [
+        'label': 'Create Empty Pane'
+        'command': 'pane:split-down-creating-empty-pane'
+      ,
+        'label': 'Moving Current Tab'
+        'command': 'pane:split-down-moving-current-tab'
+      ,
+        'label': 'Duplicate Current Tab'
+        'command': 'pane:split-down'
+      ]
+    ]
+  }
+]
