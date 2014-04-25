@@ -16,6 +16,12 @@ module.exports =
           doc:"#{desc}"
           -> paneView[method]()
 
+        paneView.command "pane:split-#{dir}-creating-new-file",
+          doc:"#{desc} and Open a New File"
+          ->
+            newPane = paneView[method]()
+            newPane?.trigger 'application:new-file'
+
         paneView.command "pane:split-#{dir}-moving-current-tab",
           doc:"#{desc} and Move the Current Tab"
           ->
