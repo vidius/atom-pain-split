@@ -1,6 +1,6 @@
 module.exports =
   activate: (state) ->
-    atom.workspaceView.eachPaneView (paneView) ->
+    @subscription = atom.workspaceView.eachPaneView (paneView) ->
       for record in [
         ['left',  'splitLeft',  'Split Left' ]
         ['right', 'splitRight', 'Split Right']
@@ -29,7 +29,7 @@ module.exports =
             currentTab = paneView.getActiveItem()
             paneView.moveItemToPane currentTab, newPane if newPane? and currentTab?
 
-  # Is it really meaningful to deactivate this? Is it even possible?
-  # TODO find out if eachPaneView functions can be unregistered.
   deactivate: ->
+    @subscription?.off()
+
   serialize: ->
