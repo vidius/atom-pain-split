@@ -1,6 +1,12 @@
 module.exports =
   activate: (state) ->
-    commands = {}
+    commands =
+      "pane:merge-all-panes": ->
+        [firstPane, rest] = atom.workspace.getPanes()
+        for pane in rest
+          for item in pane.getItems()
+            pane.moveItemToPane item, firstPane
+
     for record in [
       ['left',  'splitLeft',  'Split Left' ]
       ['right', 'splitRight', 'Split Right']
