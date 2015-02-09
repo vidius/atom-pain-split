@@ -2,7 +2,7 @@ module.exports =
   activate: (state) ->
     commands =
       "pane:merge-all-panes": ->
-        [firstPane, rest] = atom.workspace.getPanes()
+        [firstPane, rest...] = atom.workspace.getPanes()
         for pane in rest
           for item in pane.getItems()
             pane.moveItemToPane item, firstPane
