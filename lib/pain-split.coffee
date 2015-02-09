@@ -30,6 +30,12 @@ module.exports =
           if newPane? and currentTab?
             currentPane.moveItemToPane currentTab, newPane
 
+      commands["pane:merge-all-current-tabs"] = ->
+        panes = atom.workspace.getPanes()
+        for pane in panes[1..]
+          for item in pane.getItems()
+            pane.moveItemToPane item, panes[0]
+
     @subscriptions = atom.commands.add 'atom-pane', commands
 
   deactivate: ->
