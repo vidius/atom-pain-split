@@ -37,7 +37,7 @@
   'ctrl-k d down':  'pane:split-down'
 
   # Merge all tabs into one(first) pane.
-  'ctrl-k m':  'pane:merge-all-current-tabs'
+  'ctrl-k m':  'pane:merge-all-panes'
 
 '.platform-darwin':
   'cmd-k left':  'pane:split-left-creating-empty-pane'
@@ -60,4 +60,4 @@
   'cmd-k d up':    'pane:split-up'
   'cmd-k d down':  'pane:split-down'
 
-  'cmd-k m':  'pane:merge-all-current-tabs'
+  'cmd-k m':  'pane:merge-all-panes'
