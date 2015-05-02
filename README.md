@@ -1,5 +1,11 @@
 # Pain Split
 
+*This package is no longer being actively developed.* I don't use Atom any more. If you want to be the new maintainer, by all means, just ask.
+
+In the mean time, I'll at least try and fix bugs for a while longer, but I don't think I'll do feature requests.
+
+---
+
 Atom's `pane:split-*` commands suck if you want to do anything else but re-open
 the current document in your shiny new pane. Pain Split is here to help.
 
